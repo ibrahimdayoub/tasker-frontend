@@ -19,7 +19,7 @@
       },
       "edgeToEdgeEnabled": true,
       "softwareKeyboardLayoutMode": "resize",
-      "package": "com.anonymous.berotasker"
+      "package": "com.ibrahim.berotasker"
     },
     "web": {
       "output": "static",
