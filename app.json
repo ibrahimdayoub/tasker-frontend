@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Bero Tasker",
+    "slug": "bero-tasker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "bero-tasker",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.berotasker"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#111827",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "softwareKeyboardLayoutMode": "resize",
+      "package": "com.anonymous.berotasker"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "clerkPublishableKey": "pk_test_YXdhcmUtd2VyZXdvbGYtNDAuY2xlcmsuYWNjb3VudHMuZGV2JA",
+      "router": {},
+      "eas": {
+        "projectId": "17b4fa45-8796-44f5-bdf7-fbc82f1758ae"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#111827"
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
