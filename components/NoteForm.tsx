@@ -92,6 +92,8 @@ const NoteForm = memo(() => {
                     value={title}
                     onChangeText={setTitle}
                     placeholder="Note summary..."
+                    placeholderTextColor="#6b7280"
+                    style={{ textAlign: "left" }}
                     className=" p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                 />
             </View>
@@ -104,6 +106,8 @@ const NoteForm = memo(() => {
                     multiline
                     textAlignVertical="top"
                     placeholder="More details..."
+                    placeholderTextColor="#6b7280"
+                    style={{ textAlign: "left" }}
                     className="h-24 p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                 />
             </View>
@@ -145,6 +149,8 @@ const NoteForm = memo(() => {
                         onChangeText={setTagInput}
                         onSubmitEditing={addTag} // Enter click
                         placeholder="E.g. Work, Ideas"
+                        placeholderTextColor="#6b7280"
+                        style={{ textAlign: "left" }}
                         className="flex-1 p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                     />
                     <TouchableOpacity onPress={addTag} className="p-2.5 -bg-back rounded-full">

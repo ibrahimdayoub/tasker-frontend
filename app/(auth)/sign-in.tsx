@@ -29,7 +29,7 @@ const SignInScreen = () => {
 
             if (createdSessionId && setOAuthActive) {
                 await setOAuthActive({ session: createdSessionId });
-                // router.replace('/tasks');
+                router.replace('/tasks');
             }
         } catch (err: any) {
             console.error("OAuth error", err);
@@ -53,7 +53,7 @@ const SignInScreen = () => {
 
             if (completeSignIn.status === 'complete') {
                 await setActive({ session: completeSignIn.createdSessionId });
-                // router.replace('/tasks');
+                router.replace('/tasks');
             } else {
                 console.warn("Sign in status incomplete:", completeSignIn.status);
             }
@@ -105,6 +105,8 @@ const SignInScreen = () => {
                                 autoCapitalize="none"
                                 keyboardType="email-address"
                                 placeholder="Your email address"
+                                placeholderTextColor="#6b7280"
+                                style={{ textAlign: "left" }}
                                 className="p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                             />
                         </View>
@@ -115,6 +117,8 @@ const SignInScreen = () => {
                                 onChangeText={setPassword}
                                 secureTextEntry={true}
                                 placeholder="Your password"
+                                placeholderTextColor="#6b7280"
+                                style={{ textAlign: "left" }}
                                 className="p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                             />
                         </View>

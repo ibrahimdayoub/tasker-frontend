@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 import "expo-standard-web-crypto";
 import "../global.css";
 import { useEffect } from 'react';
-import { View, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, StyleSheet, ActivityIndicator, I18nManager } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Toast, { BaseToast } from 'react-native-toast-message';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
@@ -10,6 +10,9 @@ import { Stack, useRouter, useSegments } from 'expo-router';
 import * as SecureStore from "expo-secure-store";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ClerkProvider, useAuth } from "@clerk/clerk-expo";
+
+I18nManager.allowRTL(false);
+I18nManager.forceRTL(false);
 
 const queryClient = new QueryClient();
 const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY!;

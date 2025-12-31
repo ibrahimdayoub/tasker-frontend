@@ -31,7 +31,7 @@ const SignUpScreen = () => {
 
             if (createdSessionId && setOAuthActive) {
                 await setOAuthActive({ session: createdSessionId });
-                // router.replace('/tasks');
+                router.replace('/tasks');
             }
         } catch (err: any) {
             console.error("OAuth error", err);
@@ -125,6 +125,8 @@ const SignUpScreen = () => {
                                         autoCapitalize="none"
                                         keyboardType="email-address"
                                         placeholder="Your email address"
+                                        placeholderTextColor="#6b7280"
+                                        style={{ textAlign: "left" }}
                                         className="p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                                     />
                                 </View>
@@ -135,6 +137,8 @@ const SignUpScreen = () => {
                                         onChangeText={setPassword}
                                         secureTextEntry={true}
                                         placeholder="Your password"
+                                        placeholderTextColor="#6b7280"
+                                        style={{ textAlign: "left" }}
                                         className="p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                                     />
                                 </View>
@@ -178,6 +182,8 @@ const SignUpScreen = () => {
                                         maxLength={6}
                                         keyboardType="number-pad"
                                         placeholder="000000"
+                                        placeholderTextColor="#6b7280"
+                                        style={{ textAlign: "left" }}
                                         className="p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900 text-center tracking-widest"
                                     />
                                 </View>

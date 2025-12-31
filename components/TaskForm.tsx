@@ -120,6 +120,8 @@ const TaskForm = memo(() => {
                     value={title}
                     onChangeText={setTitle}
                     placeholder="Task summary..."
+                    placeholderTextColor="#6b7280"
+                    style={{ textAlign: "left" }}
                     className=" p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                 />
             </View>
@@ -132,6 +134,8 @@ const TaskForm = memo(() => {
                     multiline
                     textAlignVertical="top"
                     placeholder="More details..."
+                    placeholderTextColor="#6b7280"
+                    style={{ textAlign: "left" }}
                     className="h-24 p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                 />
             </View>
@@ -221,6 +225,8 @@ const TaskForm = memo(() => {
                                     onChangeText={(txt) => updateSubTask(txt, index)}
                                     onSubmitEditing={addSubTask} // Enter click
                                     placeholder={`Step ${index + 1}`}
+                                    placeholderTextColor="#6b7280"
+                                    style={{ textAlign: "left" }}
                                     className="flex-1 p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900"
                                 />
                                 <TouchableOpacity onPress={() => removeSubTask(index)} className="p-2.5 -bg-back rounded-full">

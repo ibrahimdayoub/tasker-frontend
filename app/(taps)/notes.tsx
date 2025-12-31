@@ -64,6 +64,8 @@ const NotesScreen = () => {
                         value={search}
                         onChangeText={setSearch}
                         placeholder="Search your notes..."
+                        placeholderTextColor="#6b7280"
+                        style={{ textAlign: "left" }}
                         className="py-2.5 flex-1 text-sm text-gray-500"
                     />
                 </View>
