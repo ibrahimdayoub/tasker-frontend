@@ -4,6 +4,11 @@ A modern, high-performance mobile application for managing **Tasks and Notes**. 
 
 ---
 
+> [!IMPORTANT]
+> **📺 Watch the Demo:** Check out the **[App Demo Video](https://www.youtube.com)** to see **Bero Tasker** in action, showcasing the smooth UI, Task/Note management, and priority sorting.
+
+---
+
 ## ✨ Features
 
 * **Dual Management:** Organize both your daily tasks and personal notes in one place.
@@ -37,6 +42,8 @@ A modern, high-performance mobile application for managing **Tasks and Notes**. 
 └── app.json        # Expo configuration
 ```
 
+---
+
 ## 🚦 Getting Started
 **1. Prerequisites**
 * Node.js & npm/yarn installed.
@@ -65,6 +72,8 @@ EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
 npx expo start
 ```
 Scan the QR code with your Expo Go app to see it in action.
+
+---
 
 ## 🔗 Related Project
 This mobile app is powered by the **[Bero Tasker Backend API](https://github.com/ibrahimdayoub/tasker-backend)**.
