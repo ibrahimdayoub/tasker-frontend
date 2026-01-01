@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# 📱 Bero Tasker - Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, high-performance mobile application for managing **Tasks and Notes**. Built with **React Native** and **Expo**, featuring a seamless user interface and secure authentication.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+* **Dual Management:** Organize both your daily tasks and personal notes in one place.
+* **Secure Authentication:** User login and signup powered by **Clerk**.
+* **Smart Sorting:** Tasks are automatically organized by priority and due date.
+* **Modern UI/UX:** Styled with **Tailwind CSS (NativeWind)** for a clean and responsive look.
+* **RTL Support:** Optimized layout for a consistent experience.
+* **Deep Linking:** Configured for seamless navigation and authentication redirects.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠 Tech Stack
 
-In the output, you'll find options to open the app in a
+* **Framework:** React Native (Expo SDK)
+* **Routing:** Expo Router (File-based routing)
+* **State & Auth:** Clerk (Authentication & User Management)
+* **Styling:** NativeWind (Tailwind CSS for React Native)
+* **HTTP Client:** Axios for API communication
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📂 Project Structure
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+├── app/            # Main application screens and navigation (Expo Router)
+├── components/     # Reusable UI components
+├── assets/         # Images, fonts, and static resources
+├── api/            # API services and Axios configurations
+├── types/          # TypeScript interfaces and type definitions
+├── utils/          # Helper functions and utility constants
+└── app.json        # Expo configuration
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🚦 Getting Started
+**1. Prerequisites**
+* Node.js & npm/yarn installed.
+* Expo Go app installed on your physical device or an Emulator.
 
-## Learn more
+**2. Installation**
+* Clone the repository and install dependencies:
 
-To learn more about developing your project with Expo, look at the following resources:
+```
+git clone https://github.com/ibrahimdayoub/tasker-frontend.git
+cd tasker-frontend
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+**3. Environment Variables**
+* Create a .env file in the root directory and add:
 
-## Join the community
+```
+EXPO_PUBLIC_API_URL=your_api_url
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
+```
 
-Join our community of developers creating universal apps.
+**4. Run the App**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+npx expo start
+```
+Scan the QR code with your Expo Go app to see it in action.
+
+## 🔗 Related Project
+This mobile app is powered by the **[Bero Tasker Backend API](https://github.com/ibrahimdayoub/tasker-backend)**.
