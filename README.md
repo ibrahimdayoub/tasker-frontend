@@ -5,7 +5,7 @@ A modern, high-performance mobile application for managing **Tasks and Notes**. 
 ---
 
 > [!IMPORTANT]
-> **📺 Watch the Demo:** Check out the **[App Demo Video](https://www.youtube.com)** to see **Bero Tasker** in action, showcasing the smooth UI, Task/Note management, and priority sorting.
+> **📺 Watch the Demo:** Check out the **[App Demo Video](https://youtu.be/BExEKLQOeNY)** to see **Bero Tasker** in action, showcasing the smooth UI, Task/Note management, and priority sorting.
 
 ---
 
