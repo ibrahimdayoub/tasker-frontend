@@ -76,4 +76,4 @@ Scan the QR code with your Expo Go app to see it in action.
 ---
 
 ## 🔗 Related Project
-This mobile app is powered by the **[Bero Tasker Backend API](https://github.com/ibrahimdayoub/tasker-backend)**.
+This mobile app is powered by the **[Bero Tasker Backend API](https://github.com/ibrahimdayoub/tasker-backend)**
