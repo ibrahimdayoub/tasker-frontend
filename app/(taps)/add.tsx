@@ -33,8 +33,9 @@ const AddScreen = () => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }} edges={['top']}>
-      <StatusBar barStyle="light-content" backgroundColor="#4f46e5" />
+    <SafeAreaView style={{ flex: 1 }} edges={['top']}>
+      {/* <SafeAreaView style={{ flex: 1, backgroundColor: '#4f46e5' }} edges={['top']}> */}
+      {/* <StatusBar barStyle="light-content" backgroundColor="#4f46e5" /> */}
       <KeyboardAvoidingView
         style={{ flex: 1 }}
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}

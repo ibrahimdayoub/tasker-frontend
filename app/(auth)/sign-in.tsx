@@ -29,7 +29,7 @@ const SignInScreen = () => {
 
             if (createdSessionId && setOAuthActive) {
                 await setOAuthActive({ session: createdSessionId });
-                router.replace('/tasks');
+                // router.replace('/tasks');
             }
         } catch (err: any) {
             console.error("OAuth error", err);
@@ -51,9 +51,9 @@ const SignInScreen = () => {
         try {
             const completeSignIn = await signIn.create({ identifier: emailAddress, password });
 
-            if (completeSignIn.status === 'complete') {
+            if (completeSignIn.status === 'complete' || completeSignIn.createdSessionId) {
                 await setActive({ session: completeSignIn.createdSessionId });
-                router.replace('/tasks');
+                // router.replace('/tasks');
             } else {
                 console.warn("Sign in status incomplete:", completeSignIn.status);
             }
@@ -66,8 +66,9 @@ const SignInScreen = () => {
     };
 
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }} edges={['top']}>
-            <StatusBar barStyle="light-content" backgroundColor="#4f46e5" />
+        <SafeAreaView style={{ flex: 1 }} edges={['top']}>
+            {/* <SafeAreaView style={{ flex: 1, backgroundColor: '#4f46e5' }} edges={['top']}> */}
+            {/* <StatusBar barStyle="light-content" backgroundColor="#4f46e5" /> */}
             <KeyboardAvoidingView
                 style={{ flex: 1 }}
                 behavior={Platform.OS === 'ios' ? 'padding' : 'height'}

@@ -54,7 +54,7 @@ const toastConfig = {
   )
 };
 
-const InitialLayout = () => {
+const InitialLayout_ = () => {
   const { isLoaded, isSignedIn } = useAuth();
   const segments = useSegments();
   const router = useRouter();
@@ -69,6 +69,49 @@ const InitialLayout = () => {
     } else if (isSignedIn && (inAuthGroup || segments[0] === undefined)) {
       router.replace('/tasks');
     }
+  }, [isSignedIn, isLoaded, segments]);
+
+  if (!isLoaded) {
+    return (
+      <View className="flex-1 items-center justify-center bg-white">
+        <ActivityIndicator size="large" color="#111827" />
+      </View>
+    );
+  }
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.wrapper}>
+        <Stack screenOptions={{ headerShown: false }} />
+      </View>
+    </View>
+  );
+};
+
+const InitialLayout = () => {
+  const { isLoaded, isSignedIn } = useAuth();
+  const segments = useSegments();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isLoaded) return;
+
+    const currentSegments = segments as string[];
+    const inAuthGroup = currentSegments[0] === '(auth)';
+
+    const timeout = setTimeout(() => {
+      if (isSignedIn) {
+        if (inAuthGroup || currentSegments.length === 0 || !currentSegments[0]) {
+          router.replace('/tasks');
+        }
+      } else if (!isSignedIn) {
+        if (!inAuthGroup) {
+          router.replace('/');
+        }
+      }
+    }, 1);
+
+    return () => clearTimeout(timeout);
   }, [isSignedIn, isLoaded, segments]);
 
   if (!isLoaded) {

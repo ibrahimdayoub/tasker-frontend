@@ -31,7 +31,7 @@ const SignUpScreen = () => {
 
             if (createdSessionId && setOAuthActive) {
                 await setOAuthActive({ session: createdSessionId });
-                router.replace('/tasks');
+                // router.replace('/tasks');
             }
         } catch (err: any) {
             console.error("OAuth error", err);
@@ -72,7 +72,7 @@ const SignUpScreen = () => {
 
             if (completeSignUp.status === 'complete') {
                 await setActive({ session: completeSignUp.createdSessionId });
-                router.replace('/tasks');
+                // router.replace('/tasks');
             } else {
                 console.warn("Sign up status incomplete:", completeSignUp.status);
             }
@@ -84,8 +84,9 @@ const SignUpScreen = () => {
     };
 
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }} edges={['top']}>
-            <StatusBar barStyle="light-content" backgroundColor="#4f46e5" />
+        <SafeAreaView style={{ flex: 1 }} edges={['top']}>
+            {/* <SafeAreaView style={{ flex: 1, backgroundColor: '#4f46e5' }} edges={['top']}> */}
+            {/* <StatusBar barStyle="light-content" backgroundColor="#4f46e5" /> */}
             <KeyboardAvoidingView
                 style={{ flex: 1 }}
                 behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
@@ -183,7 +184,7 @@ const SignUpScreen = () => {
                                         keyboardType="number-pad"
                                         placeholder="000000"
                                         placeholderTextColor="#6b7280"
-                                        style={{ textAlign: "left" }}
+                                        style={{ textAlign: "center" }}
                                         className="p-3.5 text-sm rounded-xl bg-back border border-gray-100 text-gray-900 text-center tracking-widest"
                                     />
                                 </View>

@@ -2,7 +2,7 @@
   "expo": {
     "name": "Bero Tasker",
     "slug": "bero-tasker",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "bero-tasker",
@@ -14,12 +14,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#111827",
+        "backgroundColor": "#f4f7fa",
         "foregroundImage": "./assets/images/android-icon-foreground.png"
       },
       "edgeToEdgeEnabled": true,
       "softwareKeyboardLayoutMode": "resize",
-      "versionCode": 2,
+      "versionCode": 3,
       "package": "com.ibrahim.berotasker",
       "supportsRTL": false,
       "buildType": "release",
@@ -30,7 +30,8 @@
         {
           "action": "VIEW",
           "data": {
-            "scheme": "bero-tasker"
+            "scheme": "bero-tasker",
+            "host": "tasks"
           },
           "category": [
             "BROWSABLE",
@@ -59,7 +60,7 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#111827"
+          "backgroundColor": "#f4f7fa"
         }
       ],
       "expo-web-browser"
