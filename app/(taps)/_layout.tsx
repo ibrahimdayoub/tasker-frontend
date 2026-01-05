@@ -1,9 +1,18 @@
-import { Tabs } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
+import { useEffect } from 'react';
 import { Text, View, Platform } from 'react-native';
+import { Tabs } from 'expo-router';
+import * as NavigationBar from 'expo-navigation-bar';
+import { Ionicons } from '@expo/vector-icons';
 
-const TabsLayout = () => {
-    return (
+const TabsLayout = () => {  
+    useEffect(() => {
+        NavigationBar.setVisibilityAsync("hidden");
+        NavigationBar.setBehaviorAsync('inset-swipe');
+        NavigationBar.setPositionAsync('absolute');
+        NavigationBar.setBackgroundColorAsync("#11182700");
+    }, []);
+
+    return ( 
         <Tabs screenOptions={{
             headerShown: false,
             tabBarActiveTintColor: '#f4f7fa',

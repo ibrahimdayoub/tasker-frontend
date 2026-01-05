@@ -12,9 +12,13 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.anonymous.berotasker"
     },
+    "androidNavigationBar": {
+      "visible": "leanback",
+      "backgroundColor": "#11182700"
+    },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#f4f7fa",
+        "backgroundColor": "#111827",
         "foregroundImage": "./assets/images/android-icon-foreground.png"
       },
       "edgeToEdgeEnabled": true,
@@ -60,7 +64,7 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#f4f7fa"
+          "backgroundColor": "#111827"
         }
       ],
       "expo-web-browser"
