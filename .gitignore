@@ -5,6 +5,8 @@
 expo-env.d.ts
 # @end expo-cli
 
+z.tex
+
 node_modules/
 .env
 .expo/
@@ -12,5 +14,3 @@ dist/
 npm-debug.*
 yarn-debug.*
 yarn-error.*
-
-z.tex
