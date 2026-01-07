@@ -75,5 +75,14 @@ Scan the QR code with your Expo Go app to see it in action.
 
 ---
 
+## 📌 Screenshots
+
+<img src="assets/images/welcome.jpg" alt="Welcome Page" width="75%">
+<img src="assets/images/tasks.jpg" alt="Tasks Page" width="75%">
+<img src="assets/images/notes.jpg" alt="Notes Page" width="75%">
+<img src="assets/images/add.jpg" alt="Add Page" width="75%">
+
+---
+
 ## 🔗 Related Project
 This mobile app is powered by the **[Bero Tasker Backend API](https://github.com/ibrahimdayoub/tasker-backend)**
